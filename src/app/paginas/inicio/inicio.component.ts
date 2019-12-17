@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class InicioComponent implements OnInit {
 
-  /* Slider */
+  /* Sliders */
   slider1imagen = '';
   slider1texto1 = '';
   slider1texto2 = '';
@@ -111,6 +111,8 @@ export class InicioComponent implements OnInit {
   getInfo() {
     this.http.get('https://www.themyt.com/UAMI/get_inicio.php').subscribe((data: any)=>{
       console.log(data);
+
+      /* Sliders */
     this.slider1imagen = data[0].valor;
     this.slider1texto1 = data[1].valor;
     this.slider1texto2 = data[2].valor;
@@ -125,6 +127,61 @@ export class InicioComponent implements OnInit {
     this.slider3texto1 = data[9].valor;
     this.slider3texto2 = data[10].valor;
     this.slider3titulo = data[11].valor;
+
+    /*Noticias */
+    this.noticias1imagen = data[12].valor;
+    this.noticias1titulo = data[13].valor;
+    this.noticias1subtitulo = data[14].valor;
+    this.noticias1contenido = data[15].valor;
+
+    this.noticias2imagen = data[16].valor;
+    this.noticias2titulo = data[17].valor;
+    this.noticias2subtitulo = data[18].valor;
+    this.noticias2contenido = data[19].valor;
+
+    this.noticias3imagen = data[20].valor;
+    this.noticias3titulo = data[21].valor;
+    this.noticias3subtitulo = data[22].valor;
+    this.noticias3contenido = data[23].valor;
+
+    /*Sección1 */
+    this.seccion1titulo = data[24].valor;
+    this.seccion1subtitulo1=data[25].valor;
+    this.seccion1contenido1=data[26].valor;
+    this.seccion1subtitulo2=data[27].valor;
+    this.seccion1contenido2=data[28].valor;
+    this.seccion1subtitulo3=data[29].valor;
+    this.seccion1contenido3=data[30].valor;
+    this.seccion1video=data[31].valor;
+
+    /*Sección2 */
+    this.seccion2titulo = data[32].valor;
+    this.seccion2imagen_fondo = data[33].valor;
+    this.seccion2subtitulo1= data[34].valor;
+    this.seccion2titulo1= data[35].valor;
+    this.seccion2contenido1= data[36].valor;
+    this.seccion2link1= data[37].valor;
+    this.seccion2titulo2= data[38].valor;
+    this.seccion2contenido2= data[39].valor;
+    this.seccion2link2= data[40].valor;
+    this.seccion2titulo3= data[41].valor;
+    this.seccion2contenido3= data[42].valor;
+    this.seccion2link3= data[43].valor;
+
+     /*Sección3 */
+    this.seccion3titulo = data[].valor;
+    this.seccion3imagen1 ='';
+    this.seccion3titulo1 ='';
+    this.seccion3imagen2 ='';
+    this.seccion3titulo2 ='';
+    this.seccion3imagen3 ='';
+    this.seccion3titulo3 ='';
+    this.seccion3imagen4 ='';
+    this.seccion3titulo4 ='';
+    this.seccion3imagen5 ='';
+    this.seccion3titulo5 ='';
+    this.seccion3imagen6 ='';
+    this.seccion3titulo6 ='';
 
 
     });
