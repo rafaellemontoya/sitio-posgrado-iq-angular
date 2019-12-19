@@ -169,19 +169,19 @@ export class InicioComponent implements OnInit {
     this.seccion2link3= data[43].valor;
 
      /*Sección3 */
-    this.seccion3titulo = data[].valor;
-    this.seccion3imagen1 ='';
-    this.seccion3titulo1 ='';
-    this.seccion3imagen2 ='';
-    this.seccion3titulo2 ='';
-    this.seccion3imagen3 ='';
-    this.seccion3titulo3 ='';
-    this.seccion3imagen4 ='';
-    this.seccion3titulo4 ='';
-    this.seccion3imagen5 ='';
-    this.seccion3titulo5 ='';
-    this.seccion3imagen6 ='';
-    this.seccion3titulo6 ='';
+    this.seccion3titulo = data[44].valor;
+    this.seccion3imagen1 = data[45].valor;
+    this.seccion3titulo1 = data[46].valor;
+    this.seccion3imagen2 = data[47].valor;
+    this.seccion3titulo2 = data[48].valor;
+    this.seccion3imagen3 = data[49].valor;
+    this.seccion3titulo3 = data[50].valor;
+    this.seccion3imagen4 = data[51].valor;
+    this.seccion3titulo4 = data[52].valor;
+    this.seccion3imagen5 = data[53].valor;
+    this.seccion3titulo5 = data[54].valor;
+    this.seccion3imagen6 = data[55].valor;
+    this.seccion3titulo6 = data[56].valor;
 
 
     });
