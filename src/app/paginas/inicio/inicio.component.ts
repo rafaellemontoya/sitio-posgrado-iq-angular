@@ -7,6 +7,12 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
+  public get http(): HttpClient {
+    return this._http;
+  }
+  public set http(value: HttpClient) {
+    this._http = value;
+  }
 
   /* Sliders */
   slider1imagen = '';
@@ -103,7 +109,7 @@ export class InicioComponent implements OnInit {
   seccion5contenido3 ='';
   seccion5link3 ='';
 
-  constructor(private http: HttpClient) { }
+  constructor(private _http: HttpClient) { }
 
   ngOnInit() {
     this.getInfo();
